@@ -11,6 +11,8 @@ fun readInput(name: String) = File("src", "$name.txt")
 fun reader(name: String) = File("src", name)
     .reader()
 
+fun file(name: String) = File("src", name)
+
 /**
  * Converts string to md5 hash.
  */
