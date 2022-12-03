@@ -23,7 +23,7 @@ fun main() {
     println(partTwo(input.bufferedReader()))
 }
 
-fun partOne(reader: Reader): Int {
+private fun partOne(reader: Reader): Int {
     var tally = 0
     reader.forEachLine { line ->
         val (opponent, me) = line.split(' ').map {
@@ -34,7 +34,7 @@ fun partOne(reader: Reader): Int {
     return tally
 }
 
-fun partTwo(reader: Reader): Int {
+private fun partTwo(reader: Reader): Int {
     var tally = 0
 
     reader.forEachLine { line ->

@@ -23,14 +23,14 @@ fun main() {
         partOne(countCalories(testInput.reader())) == 24000
     )
 
-    val input = reader("Day01")
+    val input = reader("Day01.txt")
     println(partOne(countCalories(input)))
 
     check(
         partTwo(countCalories(testInput.reader())) == 45000
     )
 
-    println(partTwo(countCalories(reader("Day01"))))
+    println(partTwo(countCalories(reader("Day01.txt"))))
 }
 
 fun partOne(elves: SortedSet<Elf>): Int {
