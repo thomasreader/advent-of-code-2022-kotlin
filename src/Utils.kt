@@ -13,6 +13,8 @@ fun reader(name: String) = File("src", name)
 
 fun file(name: String) = File("src", name)
 
+fun readString(name: String) = File("src", name).readText()
+
 /**
  * Converts string to md5 hash.
  */
