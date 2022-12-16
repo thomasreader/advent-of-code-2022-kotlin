@@ -104,7 +104,7 @@ data class CliffNode(
     lateinit var graph: List<List<CliffNode>>
 }
 
-fun djikstra(graph: List<CliffNode>, source: CliffNode): Pair<Map<CliffNode, Int>, Map<CliffNode, CliffNode?>> {
+private fun djikstra(graph: List<CliffNode>, source: CliffNode): Pair<Map<CliffNode, Int>, Map<CliffNode, CliffNode?>> {
     val distances: MutableMap<CliffNode, Int> = graph.associateWith { Int.MAX_VALUE }.toMutableMap()
     val prev: MutableMap<CliffNode, CliffNode?> = graph.associateWith { null }.toMutableMap()
     distances[source] = 0
